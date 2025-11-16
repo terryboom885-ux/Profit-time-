@@ -1,0 +1,2 @@
+def meet_confidence(prob, threshold=0.70):
+    return prob >= threshold
