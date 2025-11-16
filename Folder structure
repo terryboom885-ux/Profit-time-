@@ -1,0 +1,21 @@
+sports-bet-bot/
+│ README.md
+│ requirements.txt
+│ main.py
+│
+├── api/
+│   └── odds_api.py
+│
+├── model/
+│   └── predictor.py
+│
+├── utils/
+│   ├── ev.py
+│   ├── probability.py
+│   └── formatting.py
+│
+├── bankroll/
+│   └── kelly.py
+│
+└── scheduler/
+    └── refresh.py
