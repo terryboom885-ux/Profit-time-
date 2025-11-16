@@ -1,0 +1,8 @@
+def kelly_fraction(prob, odds):
+    b = odds - 1
+    q = 1 - prob
+    return max((prob * b - q) / b, 0)
+
+def recommended_stake(bankroll, prob, odds):
+    f = kelly_fraction(prob, odds)
+    return bankroll * (f * 0.5)  # half-kelly for safety
