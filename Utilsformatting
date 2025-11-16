@@ -1,0 +1,14 @@
+def format_pick_output(team, prob, odds, ev, reasoning, stake):
+    return f"""
+----------------------------------------
+PICK: {team}
+Model Win Probability: {prob*100:.1f}%
+Sportsbook Odds: {odds}
+EV: {ev:.3f}
+
+Recommended Stake: ${stake:.2f}
+
+Reasoning:
+{reasoning}
+----------------------------------------
+"""
